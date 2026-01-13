@@ -1,5 +1,4 @@
 import React from "react";
-import { resume } from "react-dom/server";
 import { Link } from "react-router";
 import ScoreCircle from "./ScoreCircle";
 
