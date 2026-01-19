@@ -72,6 +72,12 @@ export default function Home() {
             </Link>
           </div>
       )}
+
+      {resumes?.length > 0 && (
+        <Link to={'/wipe'}>
+          <button className="mt-10 text-red-600 underline">Wipe App Data</button>
+        </Link>
+      )}
     </section>
   </main>
 }
