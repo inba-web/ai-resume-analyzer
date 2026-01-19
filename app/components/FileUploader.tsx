@@ -14,7 +14,6 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
     }, [onFileSelect]);
 
     const maxFileSize = 20 * 1024 * 1024; 
-
     const {getRootProps, getInputProps, isDragActive, acceptedFiles} = useDropzone({
         onDrop,
         multiple: false,
@@ -23,8 +22,6 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
     })
 
     const file = acceptedFiles[0] || null;
-
-
 
     return (
         <div className="w-full gradient-border">

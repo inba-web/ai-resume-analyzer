@@ -6,7 +6,7 @@ import { usePuterStore } from "~/lib/puter";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
-export function meta({}: Route.MetaArgs) {
+export function meta({ }: Route.MetaArgs) {
   return [
     { title: "Resumind" },
     { name: "description", content: "Smart recommendation for your dream job" },
@@ -32,8 +32,8 @@ export default function Home() {
         {resumes.length > 0 && (
           <div className="resumes-section">
             {resumes.map((resume) => (
-              <div>
-                <ResumeCard key={resume.id} resume={resume} />
+              <div key={resume.id}>
+                <ResumeCard resume={resume} />
               </div>
             ))}
           </div>
