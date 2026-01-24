@@ -26,11 +26,11 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const {init} = usePuterStore()
+  const { init } = usePuterStore()
 
   useEffect(() => {
     init();
-  },[init])
+  }, [init])
 
   return (
     <html lang="en">
@@ -39,6 +39,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525787590923476"
+          crossOrigin="anonymous"></script>
       </head>
       <body>
         <script src="https://js.puter.com/v2/"></script>
