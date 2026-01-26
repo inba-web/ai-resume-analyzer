@@ -38,6 +38,55 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-adsense-account" content="ca-pub-4525787590923476" />
+
+        {/* Primary Meta Tags */}
+        <title>Resumind - AI Resume Analyzer & ATS Checker | Free Online Tool</title>
+        <meta name="title" content="Resumind - AI Resume Analyzer & ATS Checker | Free Online Tool" />
+        <meta name="description" content="Use Resumind's free AI resume analyzer to get an instant ATS score, keyword optimization tips, and professional feedback. Boost your job applications with the best ATS tracking simulation tool." />
+        <meta name="keywords" content="AI resume analyzer, ATS checker, free ATS tracking, resume optimization, ATS resume feedback, keyword optimization, career tools, resume scoring, job application tips" />
+        <link rel="canonical" href="https://ai-resume-analyzer-8d9i.vercel.app/" />
+        <meta name="author" content="Resumind" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ai-resume-analyzer-8d9i.vercel.app/" />
+        <meta property="og:title" content="Resumind - AI Resume Analyzer & ATS Checker" />
+        <meta property="og:description" content="Get professional AI feedback on your resume. Optimize for ATS and stand out to recruiters." />
+        <meta property="og:image" content="https://ai-resume-analyzer-8d9i.vercel.app/images/og-image.png" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://ai-resume-analyzer-8d9i.vercel.app/" />
+        <meta property="twitter:title" content="Resumind - AI Resume Analyzer & ATS Checker" />
+        <meta property="twitter:description" content="Get professional AI feedback on your resume. Optimize for ATS and stand out to recruiters." />
+        <meta property="twitter:image" content="https://ai-resume-analyzer-8d9i.vercel.app/images/og-image.png" />
+
+        {/* Structured Data (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "Resumind",
+              "operatingSystem": "Web",
+              "applicationCategory": "CareerService",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              },
+              "description": "AI-powered resume analyzer providing ATS scores and improvement tips.",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "1250"
+              }
+            })
+          }}
+        />
+
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525787590923476"

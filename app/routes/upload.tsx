@@ -1,3 +1,4 @@
+import type { Route } from "./+types/upload";
 import { type FormEvent, useState } from 'react'
 import Navbar from "~/components/Navbar";
 import FileUploader from "~/components/FileUploader";
@@ -6,6 +7,13 @@ import { useNavigate } from "react-router";
 import { convertPdfToImage } from "~/lib/pdf2img";
 import { generateUUID } from "~/lib/utils";
 import { prepareInstructions } from "../../constants";
+
+export function meta({ }: Route.MetaArgs) {
+    return [
+        { title: "Upload Your Resume | Resumind AI Analyzer" },
+        { name: "description", content: "Upload your resume for an instant AI-powered analysis. Get an ATS score and improvement points tailored to your target job description." },
+    ];
+}
 
 const Upload = () => {
     const { auth, isLoading, fs, ai, kv } = usePuterStore();
@@ -43,7 +51,7 @@ const Upload = () => {
             imagePath: uploadedImage.path,
             companyName, jobTitle, jobDescription,
             feedback: '',
-        } 
+        }
         await kv.set(`resume:${uuid}`, JSON.stringify(data));
 
         setStatusText('Analyzing...');
@@ -97,14 +105,14 @@ const Upload = () => {
 
             <section className="main-section">
                 <div className="page-heading py-16">
-                    <h1>Smart feedback for your dream job</h1>
+                    <h1>AI Resume Analyzer - Get Your Free ATS Score</h1>
                     {isProcessing ? (
                         <>
                             <h2>{statusText}</h2>
-                            <img src="/images/resume-scan.gif" className="w-full" />
+                            <img src="/images/resume-scan.gif" alt="Analyzing your resume for ATS score" className="w-full" />
                         </>
                     ) : (
-                        <h2>Drop your resume for an ATS score and improvement tips</h2>
+                        <h2>Optimize your resume with our advanced ATS tracking simulation and expert feedback.</h2>
                     )}
                     {!isProcessing && (
                         <form id="upload-form" onSubmit={handleSubmit} className="flex flex-col gap-4 mt-8">
