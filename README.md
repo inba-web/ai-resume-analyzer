@@ -1,49 +1,61 @@
 🚀 AI Resume Analyzer & Intelligent Screening Platform
+
+An AI-powered web application built to simplify resume screening and improve candidate evaluation.
+
 🧩 Overview
 
-The AI Resume Analyzer is a full-stack, AI-powered web application engineered to streamline resume screening and elevate candidate evaluation workflows.
-It enables seamless resume uploads, structured data extraction, and intelligent analysis—empowering faster, insight-driven hiring decisions.
+The AI Resume Analyzer is a full-stack application that allows users to upload resumes, extract structured information, and analyze candidate profiles using AI.
 
-Built with scalability, security, and performance as first-class citizens, the platform aligns with modern SaaS and enterprise-grade engineering standards.
+It is built with performance, scalability, and clean architecture in mind. The project follows modern development practices with SSR support and a production-ready deployment setup.
 
-✨ Key Capabilities
+✨ Key Features
+📄 Resume Upload & Parsing
 
-📄 Resume Upload & Parsing (PDF support)
+Upload PDF resumes and extract structured candidate data.
 
-🧠 AI-Driven Resume Analysis
+🧠 AI-Based Resume Analysis
 
-🔍 Structured Candidate Insight Extraction
+Generate intelligent insights from candidate profiles.
 
-🧹 Secure Application Data Wipe
+🔍 Structured Data Extraction
 
-⚡ Optimized Client & Server-Side Rendering (SSR)
+Convert unstructured resumes into clean, usable information.
 
-🔐 Production-Ready Routing & Build Pipeline
+🧹 Data Wipe Functionality
 
-🛠️ Technology Stack
-🎨 Frontend
+Securely reset application data when needed.
 
-⚛️ React
+⚡ Optimized Rendering
 
-🧭 React Router (File-based routing)
+Uses Server-Side Rendering (SSR) for better performance and SEO.
 
-⚡ Vite (High-performance bundling)
+🔐 Clean Routing & Build Setup
 
-🖥️ Backend / Server
+File-based routing with Linux-compatible builds.
 
-🌐 React Router SSR
+🛠️ Tech Stack
+Frontend
 
-🟢 Node.js Runtime
+React
 
-🚀 Build & Deployment
+React Router (File-Based Routing)
 
-☁️ Vercel
+Vite
 
-🔁 GitHub CI/CD
+Backend / Server
 
-🐧 Linux-compatible SSR builds
+React Router SSR
+
+Node.js
+
+Deployment
+
+Vercel
+
+GitHub CI/CD
 
 🗂️ Project Structure
+```
 app/
  ├── routes/
  │   ├── upload.tsx
@@ -52,54 +64,61 @@ app/
  ├── components/
  ├── utils/
  └── root.tsx
+```
 
-
-The architecture is intentionally modular, ensuring long-term maintainability, readability, and extensibility across teams and iterations.
+The structure is modular and easy to maintain, making it scalable for future enhancements.
 
 ⚙️ Getting Started
-✅ Prerequisites
+Prerequisites
 
-🟢 Node.js (v18+ recommended)
+Node.js (v18+ recommended)
 
-📦 npm or pnpm
+npm or pnpm
 
-🧬 Git
+Git
 
-📥 Installation
+Installation
+```
 git clone https://github.com/inba-web/ai-resum-analyzer.git
 cd ai-resum-analyzer
 npm install
-
-🧪 Development
+```
+Run in Development
+```
 npm run dev
-
-🏗️ Production Build
+```
+Build for Production
+```
 npm run build
-
+```
 ☁️ Deployment
 
-This application is fully optimized for Vercel deployment with end-to-end SSR support.
+This project is optimized for deployment on Vercel with full SSR support.
 
-⚠️ Important: Ensure consistent lowercase route file naming to maintain compatibility with Linux-based build environments.
+⚠️ Make sure all route file names are in lowercase to avoid issues in Linux-based build environments.
 
 🎯 Use Cases
 
-👥 HR teams accelerating resume screening
+HR teams speeding up resume screening
 
-🧑‍💼 Recruiters reducing manual review overhead
+Recruiters reducing manual review effort
 
-👨‍💻 Developers exploring AI + SSR system design
+Developers exploring AI + SSR architecture
 
-🚀 Startups prototyping intelligent hiring platforms
+Startups building hiring platforms
 
-🔮 Future Enhancements
+🔮 Future Improvements
 
-📊 Candidate scoring & ranking engine
+Candidate scoring system
 
-🧾 Job description ↔ resume matching
+Resume ↔ job description matching
 
-📚 Multi-resume batch processing
+Batch resume processing
 
-📈 Admin dashboard & analytics
+Admin dashboard with analytics
 
-🔐 Authentication & role-based access control
+Authentication and role-based access
+
+📌 Vision
+
+This project serves as a foundation for building intelligent recruitment platforms with AI integration and scalable architecture.
