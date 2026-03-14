@@ -38,10 +38,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-adsense-account" content="ca-pub-4525787590923476" />
+        {/* Adsterra Links */}
         <script src="https://pl28558255.effectivegatecpm.com/b7/a0/d3/b7a0d302adcffea375f85597716e630e.js"></script>
         <script src="https://pl28574892.effectivegatecpm.com/0b/c0/5e/0bc05e9bbc0f51e002c179a37a0f19d2.js"></script>
 
-        {/* Primary Meta Tags */}
         <title>Resumind - AI Resume Analyzer & ATS Checker | Free Online Tool</title>
         <meta name="title" content="Resumind - AI Resume Analyzer & ATS Checker | Free Online Tool" />
         <meta name="description" content="Use Resumind's free AI resume analyzer to get an instant ATS score, keyword optimization tips, and professional feedback. Boost your job applications with the best ATS tracking simulation tool." />
@@ -50,21 +50,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="author" content="Resumind" />
         <meta name="robots" content="index, follow" />
 
-        {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://ai-resume-analyzer-8d9i.vercel.app/" />
         <meta property="og:title" content="Resumind - AI Resume Analyzer & ATS Checker" />
         <meta property="og:description" content="Get professional AI feedback on your resume. Optimize for ATS and stand out to recruiters." />
         <meta property="og:image" content="https://ai-resume-analyzer-8d9i.vercel.app/images/og-image.png" />
 
-        {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://ai-resume-analyzer-8d9i.vercel.app/" />
         <meta property="twitter:title" content="Resumind - AI Resume Analyzer & ATS Checker" />
         <meta property="twitter:description" content="Get professional AI feedback on your resume. Optimize for ATS and stand out to recruiters." />
         <meta property="twitter:image" content="https://ai-resume-analyzer-8d9i.vercel.app/images/og-image.png" />
 
-        {/* Structured Data (JSON-LD) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -89,11 +86,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
           }}
         />
 
+          {/* Google Ads */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525787590923476"
           crossOrigin="anonymous"
         ></script>
+
         <Meta />
         <Links />
       </head>
